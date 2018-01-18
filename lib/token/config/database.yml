@@ -1,0 +1,21 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  host: localhost
+  database: token_development
+  port: 5432
+  username: <%= ENV['PGUSER'] || 'bastienbarbe' %>
+  password: <%= ENV['PGPASSWORD'] || nil %>
+  timeout: 5000
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  host: localhost
+  database: token_test
+  port: 5432
+  username: <%= ENV['PGUSER'] || 'bastienbarbe' %>
+  password: <%= ENV['PGPASSWORD'] || nil %>
+  timeout: 5000
